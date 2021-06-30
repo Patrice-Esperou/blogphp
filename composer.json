@@ -1,18 +1,35 @@
 {
-"name": "patriceesperou",
-"type": "project",
-"description": "cree votre premier blog en php contenant la page d'accueil 
-la page listant l’ensemble des blog posts 
-la page affichant un blog post 
-la page permettant d’ajouter un blog post 
-la page permettant de modifier un blog post 
-les pages permettant de modifier/supprimer un blog post 
-les pages de connexion/enregistrement des utilisateurs",
+  "name":"patriceesperou/php-mvc",
 
-"authors": [
-     {
+  "version":"1.1.0", 
+
+  "type":/"project",
+
+  "description":"cree votre premier blog en php",
+
+  "keywords":[
+         "pedagogic",
+         "template",
+         "web",
+         "application",
+         "php",
+         "mvc"
+            ],
+
+"authors":[
+         {
          "name": "Patrice Esperou",
          "email": "creasitenarbonne@gmail.com",
          "role": "Apprentice Developer"
-      }
-   ],
+          }
+        ],
+
+"require":{
+         "php":"5.6.40",
+           },
+"config":{ 
+         "platform": {
+                  "php":5.6.40",
+                      }
+           },
+}
