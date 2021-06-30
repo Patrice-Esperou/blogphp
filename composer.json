@@ -1,0 +1,18 @@
+{
+"name": "patriceesperou",
+"type": "project",
+"description": "cree votre premier blog en php contenant la page d'accueil 
+la page listant l’ensemble des blog posts 
+la page affichant un blog post 
+la page permettant d’ajouter un blog post 
+la page permettant de modifier un blog post 
+les pages permettant de modifier/supprimer un blog post 
+les pages de connexion/enregistrement des utilisateurs",
+
+"authors": [
+     {
+         "name": "Patrice Esperou",
+         "email": "creasitenarbonne@gmail.com",
+         "role": "Apprentice Developer"
+      }
+   ],
