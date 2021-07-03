@@ -1,5 +1,5 @@
 {
-  "name": "php-mvc",
+  "name": "blogphp",
   "description": "Model of a web application to create a blog with PHP MVC architecture",
   "keywords": [
     "pedagogic",
@@ -20,7 +20,7 @@
   "author": {
     "name": "Patrice Esperou",
     "email": "creasitenarbonne@gmail.com",
-    "url": " https://padraig11.github.io/blogphp"
+    "url": "https://padraig11.github.io/blogphp"
   }
 }
 
