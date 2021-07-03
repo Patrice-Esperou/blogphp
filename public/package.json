@@ -9,7 +9,7 @@
     "php",
     "mvc"
   ],
-"license": "MIT",
+  "license": "MIT",
   "main": "index.php",
   "homepage": "https://padraig11.github.io/blogphp",
   "repository": "https://github.com/padraig11/blogphp",
@@ -23,20 +23,3 @@
     "url": "https://padraig11.github.io/blogphp"
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
