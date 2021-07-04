@@ -5,7 +5,7 @@
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => '609ec00ee012ca7ec1644a18e879bd2218b7d2b1',
+        'reference' => '02d75240bfd5f926a641265032515f214d0c43ca',
         'name' => 'patriceesperou/blogphp',
         'dev' => true,
     ),
@@ -16,7 +16,7 @@
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => '609ec00ee012ca7ec1644a18e879bd2218b7d2b1',
+            'reference' => '02d75240bfd5f926a641265032515f214d0c43ca',
             'dev_requirement' => false,
         ),
         'symfony/polyfill-ctype' => array(
