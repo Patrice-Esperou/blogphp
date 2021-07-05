@@ -1,0 +1,25 @@
+{
+  "name": "blogphp",
+  "description": "Model of a web application to create a blog with PHP MVC architecture",
+  "keywords": [
+    "pedagogic",
+    "template",
+    "web",
+    "application",
+    "php",
+    "mvc"
+  ],
+  "license": "MIT",
+  "main": "index.php",
+  "homepage": "https://padraig11.github.io/blogphp",
+  "repository": "https://github.com/padraig11/blogphp",
+  "bugs": "https://github.com/padraig11/blogphp/issues",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.1"
+  },
+  "author": {
+    "name": "Patrice Esperou",
+    "email": "creasitenarbonne@gmail.com",
+    "url": "https://padraig11.github.io/blogphp"
+  }
+}

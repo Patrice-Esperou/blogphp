@@ -1,0 +1,22 @@
+{
+    "name": "patriceesperou/blogphp",
+    "version": "0.1.0",
+    "description": "application web for blog",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "parice esperou",
+            "email": "pesperou@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.3"
+    },
+    "require-dev": {
+        "squizlabs/php_codesniffer": "*"
+    }  
+}
