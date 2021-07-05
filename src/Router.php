@@ -99,4 +99,3 @@ class Router
         echo filter_var($response);
     }
 }
-© 2021 GitHub, Inc.
