@@ -22,6 +22,7 @@ class PdoDb
      * Receive the PDO Connection & store it
      * @param PDO $pdo
      */
+
     public function __construct(PDO $pdo)
     {
         $this->pdo = $pdo;
@@ -51,3 +52,5 @@ class PdoDb
     {
         $PDOStatement = $this->pdo->prepare($query);
         $PDOStatement->execute($params);
+    }
+}
