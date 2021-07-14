@@ -1,11 +1,28 @@
 <?php
 
-namespace App\src\controller;
+namespace App\Controller;
 
-class FrontController
+use App\Model\Factory\ModelFactory;
+use Twig\Error\LoaderError;
+use Twig\Error\RuntimeError;
+use Twig\Error\SyntaxError;
+
+/**
+ * Class HomeController
+ * Manages the Homepage
+ * @package App\Controller
+ */
+class HomeController extends MainController
 {
-    public function home()
+    /**
+     * Renders the View Home
+     * @return string
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
+    public function defaultMethod()
     {
-
+        return $this->twig->render('home.twig');
     }
 }
