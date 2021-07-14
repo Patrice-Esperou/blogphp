@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
 
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport"               content="width=device-width, initial-scale=1.0">
@@ -27,13 +27,29 @@
 </head>
 <body>
 
-    {{ include('layout/navbar.twig') }}
-
-    <header>
+<header class="header">
+    
         <h1>{{ block('title') }}</h1>
-    </header>
-
+        
+    
+</header>
+<section class="presentation">
+        <div class="photo">
+        <img src="images/profil.jpg" alt="photo de profil">
+        </div> 
+        <div class="nomprenom">
+            <p>Patrice</p>
+            <p>ESPEROU</p>
+            <div class="cv">
+            <a href="#">Curriculum Vitae</a>
+           </div>
+</section>
+ <div class="phraseaccroche">
+  <p>  L' expertise Du Développeur Par Exellence</p>
+</div>
     {% block main %}{% endblock %}
+
+    {{ include('layout/navbar.twig') }}
 
     {{ include('layout/footer.twig') }}
 

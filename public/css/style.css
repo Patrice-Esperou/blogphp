@@ -1,3 +1,12 @@
+.header{
+    text-align: center;
+    font-family: 'Kaushan Script', cursive; 
+    font-size: 40px;
+    color: #eec8ad;
+    background-color: #154695;   
+}
+
+
 h1, .phraseaccroche{
     text-align: center;
     font-family: 'Kaushan Script', cursive; 
@@ -19,6 +28,7 @@ h1, .phraseaccroche{
     
 }
 .nomprenom {
+
     font-size: 30px;
 }
 .photo {
