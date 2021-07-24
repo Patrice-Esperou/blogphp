@@ -48,11 +48,15 @@
  <div class="phraseaccroche">
   <p>  L' expertise Du Développeur Par Exellence</p>
 </div>
+<p><a class="btn-primary" href="comments.twig">Commentaire du blog</a></p>
+<section class="contact">
+</section>
     {% block main %}{% endblock %}
-
+    {% block contact %}{% endblock %}
     {{ include('layout/navbar.twig') }}
 
     {{ include('layout/footer.twig') }}
+    {{ include('layout/comments.twig') }}
 
    
 
