@@ -23,9 +23,9 @@
         
             <p>The example users are :</p>
             <ul>
-                {% for user in allUsers %}
+                {% for comment in allComments %}
                     <li>
-                        {{ user.name }} <hr> {{ user.email }}
+                        {{ comment.pseudo }} : {{ comment.content }}
                     </li>
                 {% endfor %}
             </ul>

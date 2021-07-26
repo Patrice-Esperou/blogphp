@@ -26,7 +26,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
+   {{ include('layout/navbar.twig') }}
 <header class="header">
     
         <h1>{{ block('title') }}</h1>
@@ -47,15 +47,13 @@
  <div class="phraseaccroche">
   <p>  L' expertise Du Développeur Par Exellence</p>
 </div>
-<p><a class="btn-primary" href="comments.twig">Commentaire du blog</a></p>
-<section class="contact">
-</section>
+
     {% block main %}{% endblock %}
    
-    {{ include('layout/navbar.twig') }}
+ 
 
     {{ include('layout/footer.twig') }}
-    {{ include('layout/comments.twig') }}
+    
 
    
 
