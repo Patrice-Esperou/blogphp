@@ -22,7 +22,6 @@ class PdoDb
      * Receive the PDO Connection & store it
      * @param PDO $pdo
      */
-
     public function __construct(PDO $pdo)
     {
         $this->pdo = $pdo;
@@ -52,5 +51,20 @@ class PdoDb
     {
         $PDOStatement = $this->pdo->prepare($query);
         $PDOStatement->execute($params);
+
+        return $PDOStatement->fetchAll();
+    }
+
+    /**
+     * Executes an action to the Database
+     * @param string $query
+     * @param array $params
+     * @return bool|mixed
+     */
+    public function setData(string $query, array $params = [])
+    {
+        $PDOStatement = $this->pdo->prepare($query);
+
+        return $PDOStatement->execute($params);
     }
 }

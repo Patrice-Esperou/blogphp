@@ -1,12 +1,10 @@
 {
     "name": "patriceesperou/blogphp",
-    "version": "0.1.0",
-    "description": "application web for blog",
+
     "autoload": {
         "psr-4": {
-            "App\\": "src/"          
+          "App\\": "src/"
         }
-
     },
     "authors": [
         {
@@ -15,11 +13,7 @@
         }
     ],
     "require": {
-        "twig/twig": "^3.3"
-    },
-    "require-dev": {
-        "squizlabs/php_codesniffer": "*",
-                "tracy/tracy": "^2.8.5"
-    } 
-
+        "twig/twig": "^3.3",
+        "tracy/tracy": "^2.8"
+    }
 }

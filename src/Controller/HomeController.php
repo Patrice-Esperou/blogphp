@@ -26,6 +26,6 @@ class HomeController extends MainController
         $allArticles = ModelFactory::getModel("Article")->listData();
        
 
-        return $this->twig->render("home.twig", ["Articles" => $allArticles]);
+        return $this->twig->render("home.twig", ["allArticles" => $allArticles]);
     }
 }
