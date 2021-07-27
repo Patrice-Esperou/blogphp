@@ -1,4 +1,9 @@
-CREATE TABLE `Comment` (
+CREATE DATABASE IF NOT EXISTS `blog` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
+
+USE `blog`;
+
+CREATE TABLE `comment` (
    `id` int(11) NOT NULL,
    `pseudo` varchar(100) NOT NULL,
    `content` text NOT NULL,
@@ -6,7 +11,7 @@ CREATE TABLE `Comment` (
    `article_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `Comment` (`id`, `pseudo`, `content`, `createdAt`, `article_id`) VALUES
+INSERT INTO `comment` (`id`, `pseudo`, `content`, `createdAt`, `article_id`) VALUES
 (1, 'Jean', 'Génial, hâte de voir ce que ça donne !', '2019-03-16 21:02:24', 1),
 (2, 'Nina', 'Trop cool ! depuis le temps', '2019-03-17 17:34:35', 1),
 (3, 'Rodrigo', 'Great ! ', '2019-03-17 17:42:04', 1),
@@ -17,12 +22,10 @@ INSERT INTO `Comment` (`id`, `pseudo`, `content`, `createdAt`, `article_id`) VAL
 (8, 'Aurore', 'Enfin un blog tranquille, où on ne nous casse pas les pieds !', '2019-03-19 21:09:27', 3),
 (9, 'Jordane', 'Je suis vendéen ! Amateur de mojettes !', '2019-03-20 10:10:11', 3);
 
-ALTER TABLE `Comment`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `fk_article_id` (`article_id`);
+ALTER TABLE `comment`
 
-ALTER TABLE `Comment`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+ADD PRIMARY KEY (`id`);
 
-ALTER TABLE `Comment`
-  ADD CONSTRAINT `fk_article_id` FOREIGN KEY (`article_id`) REFERENCES `article` (`id`);
+ALTER TABLE `comment`;
+
+
