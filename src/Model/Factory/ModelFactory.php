@@ -16,7 +16,7 @@ class ModelFactory
      * @var array
      */
     private static $models = [];
-
+    
     /**
      * Returns the Model if it exists or creates it before returning it
      * @param $table
@@ -28,10 +28,11 @@ class ModelFactory
 
             return self::$models[$table];
         }
-
+       
         $class                  = "App\Model\\" . ucfirst($table) . "Model";
         self::$models[$table]   = new $class(new PdoDb(PdoFactory::getPDO()));
 
         return self::$models[$table];
     }
+    
 }
