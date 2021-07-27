@@ -94,7 +94,7 @@ class Router
     public function run()
     {
         $this->controller   = new $this->controller();
-        $response           = call_article_func([$this->controller, $this->method]);
+        $response           = call_user_func([$this->controller, $this->method]);
 
         echo filter_var($response);
     }
