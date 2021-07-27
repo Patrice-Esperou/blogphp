@@ -23,9 +23,9 @@ class HomeController extends MainController
      */
     public function defaultMethod()
     {
-        $allComments = ModelFactory::getModel("Comment")->listData();
+        $allArticles = ModelFactory::getModel("Article")->listData();
        
 
-        return $this->twig->render("home.twig", ["allComments" => $allComments]);
+        return $this->twig->render("home.twig", ["Articles" => $allArticles]);
     }
 }

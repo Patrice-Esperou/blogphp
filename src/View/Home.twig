@@ -21,11 +21,11 @@
         <section>
             <h2>Demonstration</h2>
         
-            <p>The example users are :</p>
+            <p>The example article  are :</p>
             <ul>
-                {% for comment in allComments %}
+                {% for article in allarticles %}
                     <li>
-                        {{ comment.pseudo }} : {{ comment.content }}
+                        {{ article.title }} : {{ article.content }}
                     </li>
                 {% endfor %}
             </ul>
