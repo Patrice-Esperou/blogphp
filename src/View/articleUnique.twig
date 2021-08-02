@@ -1,0 +1,22 @@
+{% extends 'layout/layout.twig' %}
+
+{% block title %}Blog Unique{% endblock %}
+
+{% block description %}Homepage of the blogphp{% endblock %}
+
+
+
+{% block main %}
+    <main id="home">
+        <section>
+            <h2>blog Unique</h2>
+
+             {% for article in allArticles %}
+                    <li>
+                        {{ article.title }} : {{ article.author }}
+                    </li>
+                {% endfor %}
+
+        </section>
+        
+{% endblock %}
