@@ -1,6 +1,6 @@
 {% extends 'layout/layout.twig' %}
 
-{% block title %} {{ article.title }}{% endblock %}
+{% block title %} {{ blogs.title }}{% endblock %}
 
 {% block description %}{% endblock %}
 
@@ -9,10 +9,10 @@
 {% block main %}
     <main id="home">
         <section>
-            <h2> {{ article.title }}</h2>
+            <h2> {{ blogs.title }}</h2>
         
             <p>
-             {{ article.content }}
+             {{ blogs.content }}
             </p>
 
         </section>

@@ -1,7 +1,7 @@
 DROP DATABASE IF EXISTS blog;
 CREATE DATABASE IF NOT EXISTS `blog` DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
 USE blog;
-CREATE TABLE `Article` (
+CREATE TABLE `Blogs` (
 
 `id` int(11) NOT NULL,
 
@@ -15,7 +15,7 @@ CREATE TABLE `Article` (
 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO `Article` (`id`, `title`, `content`, `author`, `createdAt`) VALUES
+INSERT INTO `Blogs` (`id`, `title`, `content`, `author`, `createdAt`) VALUES
 
 (1, 'Voici mon premier article', 'Mon super blog est en construction.', 'Karim', '2019-03-15 08:10:24'),
 
@@ -23,11 +23,11 @@ INSERT INTO `Article` (`id`, `title`, `content`, `author`, `createdAt`) VALUES
 
 (3, 'Mon troisième article', 'Mon blog est génial !!!', 'Karim', '2019-03-16 14:45:57');
 
-ALTER TABLE `Article`
+ALTER TABLE `Blogs`
 
 ADD PRIMARY KEY (`id`);
 
-ALTER TABLE `Article`;
+ALTER TABLE `Blogs`;
 
 
 

@@ -8,11 +8,11 @@ use Twig\Error\RuntimeError;
 use Twig\Error\SyntaxError;
 
 /**
- * Class ArticleController
+ * Class BlogsController
  * Manages the Homepage
  * @package App\Controller
  */
-class ArticleController extends MainController
+class BlogsController extends MainController
 {
     /**
      * Renders the View Home
@@ -23,10 +23,10 @@ class ArticleController extends MainController
      */
     public function defaultMethod()
     {
-        $allArticles = ModelFactory::getModel("Article")->listData();
+        $allBlogs = ModelFactory::getModel("Blogs")->listData();
        
 
-        return $this->twig->render("articles.twig", ["allArticles" => $allArticles]);
+        return $this->twig->render("blogs.twig", ["allBlogs" => $allBlogs]);
     }
 
        /**
@@ -38,9 +38,9 @@ class ArticleController extends MainController
      */
     public function readMethod()
     {
-        $article = ModelFactory::getModel("Article")->readData($_GET["id"]);
+        $blogs = ModelFactory::getModel("Blogs")->readData($_GET["id"]);
        
 
-        return $this->twig->render("article.twig", ["article" => $article]);
+        return $this->twig->render("Blogs.twig", ["blogs" => $blogs]);
     }
 }

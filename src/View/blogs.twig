@@ -1,6 +1,6 @@
 {% extends 'layout/layout.twig' %}
 
-{% block title %}Articles{% endblock %}
+{% block title %}blog{% endblock %}
 
 {% block description %}Homepage of the blogphp{% endblock %}
 
@@ -12,10 +12,10 @@
             <h2>Les Articles du Blog</h2>
         
              <ul>
-                {% for article in allArticles %}
+                {% for blog in allBlogs %}
                     <li>
-                        <a href="index.php?access=article!read&id={{ article.id }}">
-                            {{ article.title }} : {{ article.author }}
+                        <a href="index.php?access=article!read&id={{ blogArticleUnique.id }}">
+                            {{ blogs.title }} : {{ blogs.author }}
                         </a>
                     </li>
                 {% endfor %}

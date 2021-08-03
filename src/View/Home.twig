@@ -23,13 +23,13 @@
              
         
              
-            <a href="index.php?access=article">Article</a>
+            <a href="index.php?access=blogs">Blog</a>
         
             <p>The example article  are :</p>
             <ul>
-                {% for article in allArticles %}
+                {% for blogs in allBlogs %}
                     <li>
-                        {{ article.title }} : {{ article.content }} ({{ article.author }})
+                        {{ blogs.title }} : {{ blogs.content }} ({{ blogs.author }})
                     </li>
                 {% endfor %}
             </ul>
