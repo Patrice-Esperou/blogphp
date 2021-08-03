@@ -1,24 +1,21 @@
 {% extends 'layout/layout.twig' %}
 
-{% block title %}Articles{% endblock %}
+{% block title %} {{ article.title }}{% endblock %}
 
-{% block article %}Homepage of the blogphp{% endblock %}
+{% block description %}{% endblock %}
 
 
 
 {% block main %}
     <main id="home">
         <section>
-            <h2>Les Articles du Blog</h2>
-            {% block article %}
-             <ul>
-                {% for article in allArticles %}
-                    <li>
-                        {{ article.title }} : {{ article.author }}
-                    </li>
-                {% endfor %}{% endblock %}
-            </ul>
+            <h2> {{ article.title }}</h2>
+        
+            <p>
+             {{ article.content }}
+            </p>
+
         </section>
     </main>
 {% endblock %}
- {{ include('layout/footer.twig') }}
+ 

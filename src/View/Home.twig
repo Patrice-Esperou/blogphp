@@ -23,15 +23,13 @@
              
         
              
-       <form method="post" action="src/view/article.twig">
-            <input type="submit" value="Article" >
-        </form>  
+            <a href="index.php?access=article">Article</a>
         
             <p>The example article  are :</p>
             <ul>
                 {% for article in allArticles %}
                     <li>
-                        {{ article.title }} : {{ article.author }}
+                        {{ article.title }} : {{ article.content }} ({{ article.author }})
                     </li>
                 {% endfor %}
             </ul>

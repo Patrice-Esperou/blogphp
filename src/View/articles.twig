@@ -1,0 +1,26 @@
+{% extends 'layout/layout.twig' %}
+
+{% block title %}Articles{% endblock %}
+
+{% block description %}Homepage of the blogphp{% endblock %}
+
+
+
+{% block main %}
+    <main id="home">
+        <section>
+            <h2>Les Articles du Blog</h2>
+        
+             <ul>
+                {% for article in allArticles %}
+                    <li>
+                        <a href="index.php?access=article!read&id={{ article.id }}">
+                            {{ article.title }} : {{ article.author }}
+                        </a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </section>
+    </main>
+{% endblock %}
+ 

@@ -26,6 +26,21 @@ class ArticleController extends MainController
         $allArticles = ModelFactory::getModel("Article")->listData();
        
 
-        return $this->twig->render("article.twig", ["allArticles" => $allArticles]);
+        return $this->twig->render("articles.twig", ["allArticles" => $allArticles]);
+    }
+
+       /**
+     * Renders the View Home
+     * @return string
+     * @throws LoaderError
+     * @throws RuntimeError
+     * @throws SyntaxError
+     */
+    public function readMethod()
+    {
+        $article = ModelFactory::getModel("Article")->readData($_GET["id"]);
+       
+
+        return $this->twig->render("article.twig", ["article" => $article]);
     }
 }
