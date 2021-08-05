@@ -1,6 +1,6 @@
 {% extends 'layout/layout.twig' %}
 
-{% block title %} {{ blogs.title }}{% endblock %}
+{% block title %}Article Unique Du Blog{% endblock %}
 
 {% block description %}{% endblock %}
 
@@ -12,7 +12,7 @@
             <h2> {{ blogs.title }}</h2>
         
             <p>
-             {{ blogs.content }}
+            {{ blogs.title }} {{ blogs.content }}
             </p>
 
         </section>

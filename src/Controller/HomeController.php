@@ -28,4 +28,5 @@ class HomeController extends MainController
 
         return $this->twig->render("home.twig", ["allBlogs" => $allBlogs]);
     }
+    
 }

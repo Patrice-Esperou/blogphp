@@ -8,6 +8,20 @@
 
 {% block main %}
     <main id="home">
+    <section class="presentation">
+        <div class="photo">
+        <img src="images/profil.jpg" alt="photo de profil">
+        </div> 
+        <div class="nomprenom">
+            <p>Patrice</p>
+            <p>ESPEROU</p>
+            <div class="cv">
+            <a href="#">Curriculum Vitae</a>
+           </div>
+</section>
+ <div class="phraseaccroche">
+  <p>  L' expertise Du Développeur Par Exellence</p>
+</div>
         <section>
             <h2>Introduction</h2>
             
@@ -19,20 +33,9 @@
                   
         <section>
             <h2>Demonstration</h2>
-            
-             
-        
-             
-            <a href="index.php?access=blogs">Blog</a>
         
             <p>The example article  are :</p>
-            <ul>
-                {% for blogs in allBlogs %}
-                    <li>
-                        {{ blogs.title }} : {{ blogs.content }} ({{ blogs.author }})
-                    </li>
-                {% endfor %}
-            </ul>
+            <a href="index.php?access=blogs">Blog</a>
         </section>
         <section>
         <h2>Contact</h2>

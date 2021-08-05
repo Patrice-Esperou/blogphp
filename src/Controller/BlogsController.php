@@ -41,6 +41,6 @@ class BlogsController extends MainController
         $blogs = ModelFactory::getModel("Blogs")->readData($_GET["id"]);
        
 
-        return $this->twig->render("Blogs.twig", ["blogs" => $blogs]);
+        return $this->twig->render("BlogArticleUnique.twig", ["blogs" => $blogs]);
     }
 }
